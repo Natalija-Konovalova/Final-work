@@ -1,0 +1,34 @@
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0 0;
+}
+form {
+    text-align: center;
+    width: 100%;
+    height: 600pxx;
+    line-height: 40px;
+    margin: 0 0;
+    padding: 5px;
+    left: 0;
+    top: 0;
+}
+
+form label {
+    font-size: large;
+    font-weight: 800;
+}
+
+.password_input {
+width: 85%;
+margin-right: 10px;
+height: 20px;
+}
+
+.copy_button {
+    background-color: rgb(0, 132, 255);
+    padding: 10px;
+}
+.generate_password {
+    padding:5px;
+    border-radius: 4px;
+}
