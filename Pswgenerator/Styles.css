@@ -1,0 +1,133 @@
+body {
+    height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form {
+    border: 1px solid rgb(4, 0, 46);
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgba(235, 230, 230, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@media screen and (width > 500px) {
+    .form-width {
+        width: 50%;
+    }
+}
+@media screen and (width < 500px) {
+    .form-width {
+        width: 98%;
+        }  
+}
+
+h1 {
+    color: rgb(4, 0, 46);
+    text-align: center;
+}
+.button {
+    background-color: transparent;
+    border: 3px solid transparent;
+    border-radius:  5px;
+    box-shadow: 0 0 5px rgb(4, 0, 46);
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(4, 0, 46);
+    transition-property: transform;
+    transition-duration: 0.6s;
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin: 15px;
+    padding: 10px;
+}
+.buttonCopy {
+    background-color: #40A4FF;
+    border: 3px solid transparent;
+    border-radius:  5px;
+    box-shadow: 0 0 5px rgb(4, 0, 46);
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(4, 0, 46);
+    transition-property: transform;
+    transition-duration: 0.6s;
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin: 15px;
+    padding: 10px;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 7px #40A4FF;
+    } 50% {
+        box-shadow: 0 0 16px #40A4FF;
+    } 100% {
+        box-shadow: 0 0 8px #40A4FF;
+    }
+}
+.button:hover {
+    transform: scale(110%);
+}
+
+.password {
+    width: 80%;
+    border: 1px solid rgb(4, 0, 46);
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    color: rgb(4, 0, 46);
+    padding: 10px;
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#password_length {
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    color: rgb(4, 0, 46);
+    padding: 10px;
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    width: 50px;
+}
+
+.password_length_hint {
+    color: rgb(4, 0, 46);
+    font-size: 10pt;
+    margin-bottom: 10px;
+}
+
+.settings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+    color: rgb(4, 0, 46);
+}
+
+.settings2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 10px;
+    
+    color: rgb(4, 0, 46);
+    width: 100%;
+    
+}
